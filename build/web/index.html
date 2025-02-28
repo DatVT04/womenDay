@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chúc mừng ngày 8/3</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+        <!-- Animate.css -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+        <link href="assests/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <!-- Intro Screen -->
+        <div id="intro">
+            <h1 class="animate__animated animate__fadeInDown">Chúc mừng Ngày Quốc tế Phụ nữ 8/3</h1>
+            <button id="start-btn" class="animate__animated animate__bounceIn animate__delay-1s">Click me!!</button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-container" id="main-content">
+            <!-- Card/Letter Section -->
+            <div class="container">
+                <div class="card-container">
+                    <div class="card" id="greeting-card">
+                        <div class="card-front">
+                            <div>
+                                <h2>Tớ có lời muốn nói với cậu nè ^.^</h2>
+                                <p>Chạm nhẹ vào thiệp để mở nè :></p>
+                                <div class="mt-3">
+                                    <i class="fas fa-hand-point-up fa-2x animate__animated animate__pulse animate__infinite"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Gửi đến cậu, người phụ nữ tuyệt vời!</h3>
+                            <p class="message">
+                                Nhân ngày 8/3, xin gửi đến cậu lời chúc mừng tốt đẹp nhất. Cảm ơn vì tất cả những gì cậu đã làm, 
+                                những nụ cười cậu mang lại và năng lượng tích cực cậu tạo ra mỗi ngày.
+                            </p>
+                            <p class="signature">Chúc cậu một ngày 8/3 thật hạnh phúc!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Section -->
+            <div class="container gallery-container">
+                <h2 class="gallery-title">Ảnh đẹp nè, trả cho cậu đoá =))</h2>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="./uploads/img1.png" alt=""/>
+                    </div>                
+                    <div class="gallery-item">
+                        <img src="./uploads/img2.png" alt=""/>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./uploads/img3.png" alt=""/>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./uploads/img4.png" alt=""/>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./uploads/img5.png" alt=""/>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./uploads/img6.png" alt=""/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="message-section">
+                    <h2>Trò chơi ghép hình đặc biệt</h2>
+                    <p class="text-center mb-4">Hãy ghép những mảnh hình để xem bức tranh kỷ niệm!</p>
+
+                    <div class="puzzle-container" id="puzzle">
+                        <!-- Mảnh ghép sẽ được tạo bằng JavaScript -->
+                    </div>
+
+                    <div class="text-center mt-3">
+                        <button id="shuffle-btn" class="btn btn-primary me-2">Trộn lại</button>
+                        <button id="solve-btn" class="btn btn-success">Xem hình gốc</button>
+                    </div>
+
+                    <div class="completion-message mt-4 text-center" id="completion" style="display: none;">
+                        <h3>Chúc mừng!</h3>
+                        <p>Bạn đã hoàn thành trò chơi. Chúc bạn một ngày 8/3 tràn đầy niềm vui!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="message-section">
+                <h2>Những món quà 8/3 trên thế giới</h2>
+                <p class="text-center mb-4">Hãy khám phá các phong tục tặng quà ngày Quốc tế Phụ nữ trên khắp thế giới</p>
+
+                <div class="world-map-container">
+                    <div class="world-map">
+                        <!-- Các điểm đánh dấu trên bản đồ -->
+                        <div class="map-marker" data-country="italy" style="top: 37%; left: 51%;">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="map-marker" data-country="russia" style="top: 25%; left: 70%;">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="map-marker" data-country="japan" style="top: 39%; left: 83%;">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="map-marker" data-country="brazil" style="top: 65%; left: 35%;">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="map-marker" data-country="vietnam" style="top: 50%; left: 78%;">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="map-marker" data-country="usa" style="top: 36%; left: 22%;">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+
+                        <!-- Hình ảnh bản đồ -->
+                        <img src="https://media1.giphy.com/media/LQo5HzZnmZQ74Uc8tI/giphy.gif" alt="World Map" class="img-fluid">
+                    </div>
+
+                    <div class="country-info" id="country-info">
+                        <div class="country-card" id="italy-card">
+                            <h4><span class="flag">🇮🇹</span> Ý (Italy)</h4>
+                            <p>Phụ nữ Ý thường được tặng bó hoa mimosa vàng rực rỡ vào ngày 8/3. Loài hoa này đã trở thành biểu tượng của ngày Quốc tế Phụ nữ tại đất nước này từ sau Thế chiến 2.</p>
+                        </div>
+                        <div class="country-card" id="russia-card">
+                            <h4><span class="flag">🇷🇺</span> Nga (Russia)</h4>
+                            <p>Tại Nga, ngày 8/3 là ngày lễ chính thức. Đàn ông thường tặng hoa tulip, chocolate và thẻ quà tặng. Nhiều gia đình còn tổ chức tiệc để tôn vinh những người phụ nữ.</p>
+                        </div>
+                        <div class="country-card" id="japan-card">
+                            <h4><span class="flag">🇯🇵</span> Nhật Bản (Japan)</h4>
+                            <p>Ở Nhật, ngày 8/3 không phổ biến như White Day (14/3) - ngày nam giới tặng quà đáp lại món quà Valentine họ nhận được. Tuy nhiên, một số công ty tổ chức sự kiện đặc biệt cho nhân viên nữ.</p>
+                        </div>
+                        <div class="country-card" id="brazil-card">
+                            <h4><span class="flag">🇧🇷</span> Brazil</h4>
+                            <p>Phụ nữ Brazil thường được tặng hoa hồng và chocolate. Nhiều sự kiện âm nhạc, nghệ thuật cũng được tổ chức để nâng cao nhận thức về các vấn đề phụ nữ.</p>
+                        </div>
+                        <div class="country-card" id="vietnam-card">
+                            <h4><span class="flag">🇻🇳</span> Việt Nam</h4>
+                            <p>Tại Việt Nam, phụ nữ thường được tặng hoa, quà và những lời chúc tốt đẹp. Nhiều công ty tổ chức tiệc và phát quà cho nhân viên nữ. Các cửa hàng hoa thường rất đông đúc vào ngày này.</p>
+                        </div>
+                        <div class="country-card" id="usa-card">
+                            <h4><span class="flag">🇺🇸</span> Hoa Kỳ (USA)</h4>
+                            <p>Trong khi ngày 8/3 không phải là ngày lễ chính thức ở Mỹ, nhiều người Mỹ vẫn kỷ niệm bằng cách tặng hoa, thẻ quà tặng hoặc tổ chức các sự kiện tôn vinh những người phụ nữ đã tạo nên sự khác biệt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Music Control -->
+        <div id="music-control">
+            <i class="fas fa-volume-mute" id="music-icon"></i>
+        </div>
+
+        <!-- Audio Element -->
+        <audio id="background-music" loop>
+            <source src="/honcayeu.mp3" type="audio/mpeg">
+        </audio>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 - Happy Women Day</p>
+        </footer>
+
+        <!-- Bootstrap JS, Popper and jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+        <script>
+             $(document).ready(function () {
+                // Tự động phát nhạc khi trang web được tải
+                let playing = true;
+                
+                // Hàm phát nhạc
+                function playMusic() {
+                    // Cố gắng phát nhạc
+                    var playPromise = $("#background-music")[0].play();
+                    
+                    // Xử lý trường hợp trình duyệt chặn tự động phát
+                    if (playPromise !== undefined) {
+                        playPromise.then(_ => {
+                            playing = true;
+                            $("#music-icon").removeClass("fa-volume-up").addClass("fa-volume-mute");
+                        })
+                        .catch(error => {
+                            // Tự động phát bị chặn
+                            playing = false;
+                            $("#music-icon").removeClass("fa-volume-mute").addClass("fa-volume-up");
+                            console.log("Autoplay prevented by browser: ", error);
+                        });
+                    }
+                }
+                
+                // Gọi hàm để phát nhạc khi trang web tải xong
+                playMusic();
+                
+                // Intro animation and transition
+                $("#start-btn").click(function () {
+                    $("#intro").fadeOut(1000);
+                    setTimeout(function () {
+                        $("#main-content").css("opacity", "1");
+                        $("#music-control").css("opacity", "1");
+                        animateElements();
+                        
+                        // Thử phát nhạc lại nếu nó chưa phát (sau tương tác người dùng)
+                        if (!playing) {
+                            playMusic();
+                        }
+                    }, 1000);
+                });
+
+                // Card flip animation
+                $("#greeting-card").click(function () {
+                    $(this).toggleClass("open");
+                });
+
+                // Music control
+                $("#music-control").click(function () {
+                    if (!playing) {
+                        $("#background-music")[0].play();
+                        $("#music-icon").removeClass("fa-volume-up").addClass("fa-volume-mute");
+                        playing = true;
+                    } else {
+                        $("#background-music")[0].pause();
+                        $("#music-icon").removeClass("fa-volume-mute").addClass("fa-volume-up");
+                        playing = false;
+                    }
+                });
+
+                // Function to animate elements as they come into view
+                function animateElements() {
+                    // Gallery items fade in
+                    $(".gallery-item").each(function (index) {
+                        $(this).addClass("animate__animated animate__fadeInUp");
+                        $(this).css("animation-delay", (index * 0.1) + "s");
+                    });
+
+                    // Message section floats in
+                    $(".message-section").addClass("animate__animated animate__fadeIn");
+                }
+            });
+
+            $(document).ready(function () {
+                // Tạo trò chơi ghép hình với 9 mảnh (3x3)
+                const puzzleSize = 3;
+                const containerWidth = 300;
+                const pieceWidth = containerWidth / puzzleSize;
+                let pieces = [];
+                let solved = false;
+
+                // Tạo các mảnh ghép
+                function createPuzzle(imageSrc = "./uploads/img1.png") {
+                    const puzzleContainer = $("#puzzle");
+                    puzzleContainer.empty();
+                    pieces = [];
+
+                    for (let row = 0; row < puzzleSize; row++) {
+                        for (let col = 0; col < puzzleSize; col++) {
+                            const pieceIndex = row * puzzleSize + col;
+                            const piece = $("<div>")
+                                    .addClass("puzzle-piece")
+                                    .css({
+                                        width: pieceWidth + "px",
+                                        height: pieceWidth + "px",
+                                        backgroundImage: `url(${imageSrc})`,
+                                        backgroundPosition: `-${col * pieceWidth}px -${row * pieceWidth}px`
+                                    })
+                                    .attr("data-index", pieceIndex);
+
+                            pieces.push({
+                                element: piece,
+                                currentIndex: pieceIndex,
+                                correctIndex: pieceIndex
+                            });
+
+                            puzzleContainer.append(piece);
+                        }
+                    }
+
+                    positionPieces();
+                    shufflePuzzle();
+
+                    // Xử lý sự kiện click vào mảnh ghép
+                    $(".puzzle-piece").click(function () {
+                        if (solved)
+                            return;
+
+                        const clickedIndex = parseInt($(this).attr("data-index"));
+                        const piece = pieces.find(p => p.currentIndex === clickedIndex);
+
+                        // Tìm một mảnh ghép khác gần đó để đổi chỗ
+                        const emptyNeighbor = findEmptyNeighbor(clickedIndex);
+                        if (emptyNeighbor !== -1) {
+                            // Đổi chỗ hai mảnh ghép
+                            const neighborPiece = pieces.find(p => p.currentIndex === emptyNeighbor);
+
+                            // Đảm bảo tìm thấy cả hai mảnh ghép
+                            if (piece && neighborPiece) {
+                                const tempIndex = piece.currentIndex;
+                                piece.currentIndex = neighborPiece.currentIndex;
+                                neighborPiece.currentIndex = tempIndex;
+
+                                positionPieces();
+                                checkCompletion();
+                            }
+                        }
+                    });
+                }
+
+                // Vị trí các mảnh ghép dựa trên currentIndex
+                function positionPieces() {
+                    pieces.forEach(piece => {
+                        const row = Math.floor(piece.currentIndex / puzzleSize);
+                        const col = piece.currentIndex % puzzleSize;
+
+                        piece.element.css({
+                            top: row * pieceWidth + "px",
+                            left: col * pieceWidth + "px"
+                        });
+
+                        // Đánh dấu các mảnh ghép đã đúng vị trí
+                        if (piece.currentIndex === piece.correctIndex) {
+                            piece.element.addClass("correct");
+                        } else {
+                            piece.element.removeClass("correct");
+                        }
+                    });
+                }
+
+                // Tìm mảnh ghép trống gần mảnh hiện tại
+                function findEmptyNeighbor(index) {
+                    const row = Math.floor(index / puzzleSize);
+                    const col = index % puzzleSize;
+
+                    // Kiểm tra 4 hướng (trên, dưới, trái, phải)
+                    const neighbors = [
+                        row > 0 ? index - puzzleSize : -1, // Trên
+                        row < puzzleSize - 1 ? index + puzzleSize : -1, // Dưới
+                        col > 0 ? index - 1 : -1, // Trái
+                        col < puzzleSize - 1 ? index + 1 : -1           // Phải
+                    ];
+
+                    // Lọc bỏ vị trí không hợp lệ (-1)
+                    const validNeighbors = neighbors.filter(n => n !== -1);
+
+                    // Nếu có hàng xóm hợp lệ, chọn một ngẫu nhiên
+                    if (validNeighbors.length > 0) {
+                        return validNeighbors[Math.floor(Math.random() * validNeighbors.length)];
+                    }
+
+                    return -1;
+                }
+
+                // Trộn các mảnh ghép
+                function shufflePuzzle() {
+                    solved = false;
+                    $("#completion").hide();
+
+                    // Trộn mảnh ghép bằng cách đổi chỗ ngẫu nhiên nhiều lần
+                    for (let i = 0; i < 50; i++) {
+                        const randomIndex1 = Math.floor(Math.random() * pieces.length);
+                        const randomIndex2 = Math.floor(Math.random() * pieces.length);
+
+                        const temp = pieces[randomIndex1].currentIndex;
+                        pieces[randomIndex1].currentIndex = pieces[randomIndex2].currentIndex;
+                        pieces[randomIndex2].currentIndex = temp;
+                    }
+
+                    positionPieces();
+                }
+
+                // Kiểm tra xem puzzle đã hoàn thành chưa
+                function checkCompletion() {
+                    const isComplete = pieces.every(piece => piece.currentIndex === piece.correctIndex);
+
+                    if (isComplete) {
+                        solved = true;
+                        $("#completion").fadeIn(500);
+                        $(".puzzle-piece").addClass("correct");
+
+                        // Hiệu ứng hoàn thành
+                        setTimeout(() => {
+                            $(".puzzle-piece").addClass("animate__animated animate__pulse");
+                        }, 500);
+                    }
+                }
+
+                // Giải puzzle
+                function solvePuzzle() {
+                    pieces.forEach(piece => {
+                        piece.currentIndex = piece.correctIndex;
+                    });
+
+                    positionPieces();
+                    solved = true;
+                    $("#completion").fadeIn(500);
+                }
+
+                // Khởi tạo puzzle
+                createPuzzle();
+
+                // Xử lý nút shuffle
+                $("#shuffle-btn").click(function () {
+                    shufflePuzzle();
+                });
+
+                // Xử lý nút solve
+                $("#solve-btn").click(function () {
+                    solvePuzzle();
+                });
+            });
+            $(document).ready(function () {
+                // Hiển thị thông tin quốc gia khi nhấp vào marker
+                $(".map-marker").click(function () {
+                    const country = $(this).data("country");
+                    $(".country-card").removeClass("active").fadeOut(300);
+
+                    setTimeout(function () {
+                        $(`#${country}-card`).addClass("active").fadeIn(300);
+                    }, 300);
+                });
+
+                // Mặc định hiển thị Việt Nam
+                $("#vietnam-card").addClass("active").show();
+            });
+        </script>
+    </body>
+</html>
